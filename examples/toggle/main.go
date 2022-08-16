@@ -1,6 +1,8 @@
 package main
 
 import (
+	"image/color"
+
 	"github.com/pwiecz/go-fltk"
 )
 
@@ -32,7 +34,7 @@ func NewMyToggleButton(x, y, w, h int) *MyToggleButton {
 
 func main() {
 	fltk.InitStyles()
-	fltk.SetBackgroundColor(0, 0, 0)
+	fltk.SetBackgroundColor(color.RGBA{R: 0, G: 0, B: 0})
 	win := fltk.NewWindow(200, 200)
 	NewMyToggleButton(70, 90, 60, 15)
 	win.End()
